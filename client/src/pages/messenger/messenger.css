@@ -1,0 +1,109 @@
+.messenger {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.chatMenu{
+  border-right: 1px solid #8d8d8d;
+}
+
+.chatMenu .title{
+  font-size: 4rem;
+  color:#fff;
+  font-weight: 500;
+}
+
+.chatMenuInput {
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 15px;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  min-height: 250px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 85%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 10px;
+  resize: none;
+  font-size: 1.8rem;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #FF5421;
+  color: white;
+  font-size: 2rem;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    flex: 1;
+  }
+
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox {
+    flex: 10;
+  }
+
+  .chatOnline {
+    flex: 1px;
+  }
+}
+
+.yourTrainer{
+  border-top: 1px solid #eee;
+  color:#fff;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.conversationName i{
+  padding-left: 1rem;
+}

@@ -1,0 +1,144 @@
+.classes {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 4rem;
+    padding: 4rem 0;
+}
+
+.title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.class-container {
+    margin-bottom: 2rem;
+}
+
+.class-container img {
+    width: 100%;
+}
+
+.class-container .name {
+    font-size: 2rem;
+}
+
+.class-container .class_name {
+    font-size: 1.7rem;
+}
+
+.class-container .spec {
+    font-size: 1.6rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modals {
+    padding: 4rem 0;
+}
+
+.modal-btns {
+    display: flex;
+}
+
+
+.modal-btn {
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color);
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background: #fff;
+    color: var(--color);
+    border: 1px solid transparent;
+}
+
+.modal-btn.active {
+    background: var(--color);
+}
+
+.modal-btn.active:hover {
+    background: var(--color);
+    color: #fff;
+}
+
+.modal-container {
+    display: none;
+}
+
+.modal-container.active {
+    display: block;
+}
+
+.nothings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.date,
+.feature {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.days,
+.time {
+    font-size: 1.6rem;
+}
+
+.create-icon i,
+.link i {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--color);
+    cursor: pointer;
+}
+
+.create-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.create-icon {
+    font-size: 2rem;
+    color: var(--color);
+    background: #fff;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+}
+
+.create-icon:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--color);
+}
+
+.links {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link{
+    cursor: pointer;
+}

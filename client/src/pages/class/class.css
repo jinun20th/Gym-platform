@@ -1,0 +1,169 @@
+form .group {
+    margin-bottom: 2rem;
+}
+
+form label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    height: 12rem;
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background: transparent !important;
+    border: 1px solid var(--color) !important;
+    border-radius: 5px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background: transparent !important;
+    border: 1px solid var(--color) !important;
+    border-radius: 5px;
+}
+
+.group input[type="radio"] {
+    width: inherit;
+}
+
+.group input[type="radio"]:checked {
+    color: #000;
+}
+
+.group .d-flex label {
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+.submit-btn {
+    display: flex;
+    margin: 0 auto;
+    height: inherit;
+    line-height: inherit;
+    background: var(--color);
+    justify-content: center;
+}
+
+.submit-btn:hover {
+    background: #fff;
+    color: var(--color);
+    border: 1px solid transparent;
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.avatar-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 100%;
+    padding: 2rem 3rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.avatar-img i {
+    color: #fff;
+    font-size: 10rem;
+}
+
+.avatar-input label {
+    background: transparent;
+    border: 1px solid var(--color);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+
+.avatar-input label:hover {
+    background: #fff;
+    color: var(--color);
+}
+
+.avatar-input input {
+    display: none;
+}
+
+.avatar-desc {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.group select {
+    width: 100%;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: transparent;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.group option {
+    color: #000;
+    background: #fff;
+}
+
+.MuiSvgIcon-root {
+    color: #fff;
+    font-size: 2rem !important;
+}
+
+.MuiTypography-root,
+.MuiButtonBase-root {
+    font-size: 1rem !important;
+}
+
+.searchWrapper {
+    border: none !important;
+    padding: 0 !important;
+    min-height: fit-content !important;
+}
+
+.chip {
+    background: var(--color) !important;
+    font-size: 1.5rem;
+    border: none !important;
+}
+
+.multiSelectContainer li {
+    font-size: 1.5rem;
+}
+
+.highlightOption,
+.multiSelectContainer li:hover {
+    background: var(--color) !important;
+}

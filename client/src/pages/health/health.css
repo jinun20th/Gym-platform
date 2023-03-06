@@ -1,0 +1,66 @@
+.health {
+    margin-top: 8rem;
+}
+
+.health-title {
+    color: var(--color);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.health-content {
+    color: #fff;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.health-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.health-form form{
+    width: 100%;
+}
+
+.health-form .title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.health-form .group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.health-form .group label i {
+    margin-right: 1rem;
+}
+
+.health-form .group input[type="radio"] {
+    display: none;
+}
+
+.health-form .group input[type="radio"]:checked+label {
+    color: var(--color);
+}
+
+.health-form input[type="text"] {
+    background:#fff;
+    color:#fff;
+    margin: 2rem 0;
+    border: 1px solid transparent;
+    padding: 1.25rem 1rem;
+    height:inherit;
+}

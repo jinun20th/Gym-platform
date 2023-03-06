@@ -1,0 +1,24 @@
+.footer{
+  padding-top: 8rem;
+  background: url(/public/img/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.footer-title{
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom:1rem;
+}
+
+.footer-list li,
+.footer-list li a{
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.footer-list li a i{
+  font-size: 2.5rem;
+}
