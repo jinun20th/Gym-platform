@@ -1,14 +1,20 @@
 # Gym Platform
 
-This app is fullstack MERN. <br>
+This app build with technology MERN stack. Gym platform is an app that user can booking a class or personal trainer for training purposes. It is a c2c bussiness model require the user want to be a trainers must to upload proof of certification. <br>
 
 ## Features
 - Class and Trainer Booking: Allow users to book classes or personal training sessions with certified trainers directly through the app. Users can choose the type of class or training session they want, view available times, and book their preferred slot.
+
 - Certification Verification: To ensure that only certified trainers are listed on the platform, require trainers to upload proof of certification to their profile, which can be verified by an admin or automated system.
+
 - Payment Integration: Allow users to pay for their bookings directly through the app using a secure payment gateway. This can be done on a per-class or per-session basis, or users can purchase packages of classes or training sessions.
+
 - Social Networking: Include a social networking feature that allows users to connect with each other and trainers. 
+
 - Chat Application: Include a built-in chat application that allows users and trainers to communicate with each other before, during, and after classes or training sessions.
+
 - Video Call: Allow users and trainers to communicate via video call within the app.
+
 - Workout Tracker: Include a workout tracker feature that allows users to track their progress and keep a record of their workouts.
 
 ---
