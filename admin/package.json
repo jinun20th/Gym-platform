@@ -1,6 +1,6 @@
 {
-  "name": "lamadmin",
-  "version": "0.1.0",
+  "name": "Gym-platform",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.1",
