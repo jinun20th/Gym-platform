@@ -2,7 +2,6 @@ import "./profile.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { useState, useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import useFetch from "../../hooks/useFetch";
 import axios from "axios";
@@ -41,11 +40,11 @@ const Profile = () => {
         new: undefined,
         replace: undefined,
     })
-    const [options, setOptions] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
-    const [languages, setLanguages] = useState(["Việt", "Anh", "Pháp", "Nhật", "Hàn", "Trung"]);
+    const [options] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
+    const [languages] = useState(["Việt", "Anh", "Pháp", "Nhật", "Hàn", "Trung"]);
 
     const [toggleState, setToggleState] = useState(1);
-    
+
     const toggleTab = (index) => {
         setToggleState(index);
     }
@@ -64,6 +63,7 @@ const Profile = () => {
             case 5:
                 setEx((prev) => ({ ...prev, [e.target.name]: e.target.value }))
                 break;
+            default: break;
         }
     };
 
@@ -102,11 +102,12 @@ const Profile = () => {
                 break;
             case 5:
                 try {
-                    const res = await axios.post(`/user/${user._id}`, ex);
+                    await axios.post(`/user/${user._id}`, ex);
                     toast.success("Đăng ký làm HLV thành công");
                 } catch (err) {
                     toast.error(err.response.data.message);
                 } break;
+                default: break;
         }
     }
 

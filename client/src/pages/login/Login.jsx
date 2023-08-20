@@ -31,10 +31,9 @@ const Login = () => {
   })
 
   const [isLogin, setIslogin] = useState(true);
-  const [isTrainer, setIstrainer] = useState(false);
   const [rpassword, setRpassword] = useState();
 
-  const { loading, error, dispatch } = useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext);
 
   const navigate = useNavigate()
 

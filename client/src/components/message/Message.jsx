@@ -1,5 +1,4 @@
 import "./message.css";
-import { format } from "timeago.js";
 
 export default function Message({ message, own }) {
 
@@ -8,13 +7,12 @@ export default function Message({ message, own }) {
       <div className="messageTop">
         <img
           className="messageImg"
-
           src="https://t4.ftcdn.net/jpg/04/08/24/43/360_F_408244382_Ex6k7k8XYzTbiXLNJgIL8gssebpLLBZQ.jpg"
           alt=""
         />
         <p className="messageText">{message.content}</p>
       </div>
-      <div className="messageBottom">{format(message.createdAt)}</div>
+      <div className="messageBottom">{message.createdAt}</div>
     </div>
   );
 }

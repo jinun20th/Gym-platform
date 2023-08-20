@@ -1,6 +1,5 @@
 import "./class.css"
-import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { useParams } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
@@ -24,8 +23,8 @@ const Class = () => {
         price: undefined,
         specialize: undefined,
     })
-    const [days, setDays] = useState(["T2", "T3", "T4", "T5", "T6", "T7", "CN"]);
-    const [specs, setSpecs] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
+    const [days] = useState(["T2", "T3", "T4", "T5", "T6", "T7", "CN"]);
+    const [specs] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
     const handleChange = (e) => {
         const { name, value } = e.target;
         setInfo((prev) => ({ ...prev, [name]: value }))

@@ -23,7 +23,7 @@ const Modal = ({ setShow, trainerId }) => {
     }
     const [days, setDays] = useState();
 
-    const [value, setValue] = useState({
+    const [value] = useState({
         trainerId: trainerId,
         userId: user._id,
         days: undefined,
@@ -39,6 +39,8 @@ const Modal = ({ setShow, trainerId }) => {
                 break;
             case 2:
                 setClasses((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+                break;
+            default:
                 break;
         }
     }
@@ -78,6 +80,8 @@ const Modal = ({ setShow, trainerId }) => {
             } catch (err) {
                 toast.error("Có lỗi xảy ra vui lòng thử lại sau")
             }
+                break;
+            default:
                 break;
         }
     }

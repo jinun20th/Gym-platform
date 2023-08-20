@@ -1,18 +1,15 @@
 import "./trainers.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import Modal from "../../components/modal/Modal";
 import { Link } from "react-router-dom";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import useFetch from "../../hooks/useFetch";
 
 const Trainers = () => {
   const { user } = useContext(AuthContext);
   const { data } = useFetch("/trainer/");
-  const [flag, setFlag] = useState(0);
-  const [id, setId] = useState("");
-  const [join, setJoin] = useState([]);
+  const [join] = useState([]);
   const [gender, setGender] = useState("");
   const [specialize, setSpecialize] = useState("");
   const [sort, setSort] = useState(0);
@@ -95,15 +92,6 @@ const Trainers = () => {
     search(data);
   }
 
-  const handleClick = (id) => {
-    if (user) {
-      setId(id);
-    }
-    else {
-      alert('Please login first');
-    }
-  }
-  console.log(data);
   return (
     <div>
       <Navbar />

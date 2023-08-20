@@ -1,6 +1,5 @@
 import "./create.css"
-import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import { AuthContext } from "../../context/AuthContext";
 import Footer from "../../components/footer/Footer";
@@ -23,8 +22,8 @@ const Create = () => {
         price: undefined,
         specialize: undefined,
     })
-    const [days, setDays] = useState(["T2", "T3", "T4", "T5", "T6", "T7", "CN"]);
-    const [specs, setSpecs] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
+    const [days] = useState(["T2", "T3", "T4", "T5", "T6", "T7", "CN"]);
+    const [specs] = useState(["Fitness", "Yoga", "Cardio", "Aerobic", "Workout"]);
     const handleChange = (e) => {
         setInfo((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }

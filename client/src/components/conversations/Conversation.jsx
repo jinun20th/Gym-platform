@@ -16,7 +16,7 @@ export default function Conversation({ conversation, currentUser }) {
       }
     };
     getUser();
-  }, [currentUser, conversation]);
+  }, [currentUser, conversation, friendId]);
 
   return (
     <div className="conversation">

@@ -1,7 +1,6 @@
 import "./classes.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import useFetch from "../../hooks/useFetch";
 import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
