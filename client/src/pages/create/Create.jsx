@@ -5,7 +5,7 @@ import useFetch from "../../hooks/useFetch";
 import { AuthContext } from "../../context/AuthContext";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-import axios from "axios";
+import axios from 'axios';
 import Multiselect from 'multiselect-react-dropdown';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
