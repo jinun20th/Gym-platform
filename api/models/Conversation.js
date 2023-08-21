@@ -6,11 +6,6 @@ const ConversationSchema = new mongoose.Schema({
     members: {
         type: Array,
     },
-    /* messages:{
-            type: mongoose.ObjectId,
-            ref: "Message",
-            default: [],
-        } */
 },
     { timestamps: true }
 );

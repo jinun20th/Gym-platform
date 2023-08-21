@@ -24,12 +24,11 @@ router.put('/:id',/* verifyTrainer, */ updateClass)
 router.post('/booking/', /* verifyUser, */ bookingClass)
 router.post('/person/', /* verifyUser, */ bookingDays)
 //DELETE
-router.delete('/delete/:id',/* verifyTrainer, */ deleteClass)
+router.delete('/:id',/* verifyTrainer, */ deleteClass)
 //GET
 router.get('/:id', getClass)
 router.get('/', getClasses)
 //GET TRAINER CLASS
-
 router.get('/trainer/:id', getTrainerAll)
 router.get('/trainer/class/:id', getTrainerClasses)
 router.get('/trainer/person/:id', getTrainerPersonal)

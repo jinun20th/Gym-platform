@@ -46,7 +46,7 @@ const Classes = () => {
     const handleClick = async (item) => {
         console.log(item);
         try {
-            await axios.delete(`/classes/delete/${item}`);
+            await axios.delete(`/classes/${item}`);
             toast.success("Xóa lớp thành công");
         }
         catch (err) {

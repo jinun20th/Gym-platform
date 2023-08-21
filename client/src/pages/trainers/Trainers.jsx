@@ -2,13 +2,11 @@ import "./trainers.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import { useState } from "react";
 import useFetch from "../../hooks/useFetch";
 
 const Trainers = () => {
-  const { user } = useContext(AuthContext);
-  const { data } = useFetch("/trainer/");
+  const { data } = useFetch("https://gym-backend-tpie.onrender.com/api/trainer/");
   const [join] = useState([]);
   const [gender, setGender] = useState("");
   const [specialize, setSpecialize] = useState("");

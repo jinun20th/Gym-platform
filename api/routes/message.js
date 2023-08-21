@@ -3,8 +3,6 @@ import {
     createMessage,
     getMessage
 } from "../controllers/message.js";
-/* import { verifyUser, verifyTrainer, verifyAdmin } from "../utils/verifyToken.js";*/
-
 const router = express.Router();
 
 router.post('/', createMessage);

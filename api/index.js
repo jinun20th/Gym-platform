@@ -10,6 +10,9 @@ import trainerRoute from "./routes/trainer.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+import swaggerUI from "swagger-ui-express";
+import swaggerOption from './swagger.js';
+
 const app = express();
 dotenv.config();
 
@@ -31,6 +34,8 @@ app.use(cors())
 app.use(cookieParser())
 app.use(express.json());
 
+app.use('/swagger', swaggerUI.serve, swaggerUI.setup(swaggerOption))
+
 app.use("/api/auth", authRoute);
 app.use("/api/user", usersRoute);
 app.use("/api/classes", classesRoute);
@@ -49,7 +54,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(5000 , () => {
+app.listen(5000, () => {
   connect();
   console.log("Connected to backend.");
+  console.log("http://localhost:5000/swagger")
 });

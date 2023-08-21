@@ -49,7 +49,6 @@ const Class = () => {
             toast.error("Có lỗi xảy ra vui lòng thử lại");
         }
     }
-    console.log(data);
     return (
         <div>
             <Navbar />
